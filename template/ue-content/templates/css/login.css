@@ -1,0 +1,288 @@
+@charset "utf-8";
+
+* {
+	margin:0;
+	padding:0;
+}
+a {
+	text-decoration:none;
+	color:#535353;
+	font-size:14px;
+	font-family: "arial","Microsoft YaHei","monospace","sans-serif";
+}
+body {
+	color:#535353;
+	font-size:16px;
+	font-family: "Microsoft YaHei","arial";
+	background:#f0f1f1;
+}
+img {
+	border:0;
+}
+ol, ul, li {
+	list-style:none;
+}
+dl, dt, dd, ul, li {
+	margin:0;
+	padding:0;
+}
+input,textarea {
+	outline: none;
+}
+.pd20 {
+	padding:20px;
+}
+.pd50 {
+	padding:50px;
+}
+.fl {
+	float:left;
+}
+.fr {
+	float:right; 
+}
+.clear {
+	clear:both;
+}
+#header {
+	width:100%;
+	background:#323436;
+	position:fixed;
+	left:0;
+	top:0;
+	z-index:10;
+	height:60px;
+}
+.openlogin a {
+	-webkit-transition:color 0.3s linear;  /* safari和chrome */
+	-moz-transition:color 0.3s linear;    /* firefox */
+	-o-transition:color 0.3s linear;      /* opera */
+	transition:color 0.3s linear;
+}
+.openlogin a:hover {
+	color:#fff;
+}
+.login {
+	position:relative;
+	height:60px;
+	line-height:32px;
+	margin-top:10px;
+	margin-right: 20px;
+}
+.login li {
+	float:left;       /* li元素向左对齐 */
+	display:block;
+}
+.login li a {
+	text-align:center;
+	font-size:16px;
+	display:block;
+	width:70px;
+	height:40px;
+	line-height:40px;
+	background:#505050;
+	color:#acacac;
+}
+.login .openregister a {
+	background:#6BC30D;
+	color:#fff;
+}
+
+.loginmask {
+	width:100%;
+	height:100%;
+	z-index:8;      /* 在header下面 */
+	background:#000;
+	position:fixed;
+	top:0;
+	left:0;
+	display:none;
+}
+#loginalert {
+	width:440px;
+	background:#fff;
+	position:fixed;
+	top:-600px;
+	left:50%;
+	margin-left:-220px;
+	z-index:99;
+	display:none;
+}
+.log-reg-common {
+	padding-bottom: 0px;
+}
+.logo {
+	float: left;
+	padding-left: 20px;
+	width: 240px;
+}
+.closealert {
+	width:20px;
+	height:20px;
+	cursor:pointer;
+	background:url('icons.png') no-repeat -220px -315px;
+	-webkit-transition:all 0.4s ease-out;
+	-moz-transition:all 0.4s ease-out;
+	-o-transition:all 0.4s ease-out;
+	transition:all 0.4s ease-out;
+}
+.closealert:hover {
+	transform:rotate(-180deg);
+	-moz-transform:rotate(-180deg);
+	-webkit-transform:rotate(-180deg);
+	-o-transform:rotate(-180deg);
+}
+.loginwrap {
+	padding: 0px 50px 0px 50px;
+}
+.loginh {
+	height:40px;
+	margin-top:20px;
+}
+.loginh .fl {
+	font-size:30px;
+	line-height:40px;
+	color:#292929;
+}
+.loginh .fr {
+	font-size:18px;
+	line-height:50px;
+	color:#707070;
+}
+.loginh .fr a {
+	font-size:18px;
+	line-height:50px;
+	color:#FF4200;
+	margin-left:5px;
+}
+.logininput input {
+	display:block;
+	height:18px;
+	line-height:18px;
+	width:100%;
+	border: #DAE2E5 1px solid;
+	text-indent:10px;
+	overflow:hidden;
+	color: #333;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-size: 16px;
+}
+.logininput .frame {
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.loginbtn {
+	line-height:70px;
+	color:#6B6A6A;
+}
+.loginbtn .fr a:hover {
+	color: red;
+}
+
+.loginsubmit input {
+	width:130px;
+	height:40px;
+	line-height:40px;
+	color:#fff;
+	background:#70CA10;
+	display:block;
+	text-align:center;
+	font-size:20px;
+	border:none;
+	font-family:'微软雅黑';
+	cursor:pointer;
+}
+.loginsubmit {
+	width:130px;
+	height:40px;
+	margin:15px 20px 0 0;
+	position:relative;
+}
+.loginwrap {
+	border-bottom:1px solid #ecf2f5;
+}
+.thirdlogin {
+	padding-left: 50px;
+}
+.thirdlogin .pd20 {
+	padding: 20px 0px 20px 0px;
+}
+.thirdlogin h4 {
+	color:#6B6A6A;
+	font-weight:500;
+	margin-bottom:20px;
+}
+.thirdlogin ul li {
+	display:block;
+	float:left;
+}
+.thirdlogin ul li a {
+	display:block;
+	height:60px;
+	width:60px;
+	margin-right: 35px;
+}
+#sina a {
+	background: url('share/thirdlogin.png') no-repeat 0px 0px;
+}
+#qq a {
+	background: url('share/thirdlogin.png') no-repeat -100px 0px;
+}
+#wechat a {
+	background: url('share/thirdlogin.png') no-repeat -203px 0px;
+}
+#baidu a {
+	background: url('share/thirdlogin.png') no-repeat -304px 0px;
+}
+.logininput input {
+	-webkit-transition:all 0.2s ease-in;
+	-moz-transition:all 0.2s ease-in;
+	-o-transition:all 0.2s ease-in;
+	transition:all 0.2s ease-in;
+}
+.logininput input:focus {
+	border-color:#6BC30D;
+}
+
+.logininput p {
+	float: left;
+	margin-left: -32px;
+}
+.logininput img {
+	width: 30px;
+	height: 36px;
+}
+/*被选中的*/
+::selection {
+	background:#3385ff;
+	color:#fff;
+}
+/*支持火狐*/
+::-moz-selection {
+	background:#3385ff;
+	color:#fff;
+}
+::-webkit-selection {
+	background:#3385ff;
+	color:#fff;
+}
+
+.hide {
+	display:none;
+}
+.show {
+	display:block;
+}
+
+.logininput input.regbtn {
+	text-align: center;
+	color: #fff;
+	background-color: #5aa700;
+	height: 50px;
+	margin-bottom: 60px; 
+}
+.regbtn:hover {
+	cursor: pointer;
+	background-color: #63b700 !important;
+}
