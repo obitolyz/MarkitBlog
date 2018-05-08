@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>弹出层登录和注册</title>
+  <link rel="stylesheet" type="text/css" href="template/ue-content/templates/css/login.css" />
+  <script src="https://apps.bdimg.com/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="script/ui.js"></script>
+</head>
+
+<body style="padding-top:90px">
+
+  <div id="header">
+    <div class="login fr">
+      <ul>
+        <li class="openlogin"><a href="javascript:;" onclick="return false;">登录</a></li>
+        <li class="openregister"><a href="javascript:;" onclick="return false;">注册</a></li>
+      </ul>
+    </div>
+    <div style="clear:both;"></div>
+  </div>
+
+  <div class="loginmask"></div>
+
+  <div id="loginalert" style="height: 475px;">
+    <!-- 弹出层 -->
+    <div class="pd20 log-reg-common">
+      <h3>
+        <img src="icon\bloglogo.png" class="logo">
+        <i class="closealert fr"></i>
+        <div class="clear"></div>
+      </h3>
+    </div>
+    <div class="loginwindow">
+      <div class="loginwrap">
+        <div class="loginh">
+          <!-- login head -->
+          <div class="fl">会员登录</div>
+          <div class="fr">还没有账号?<a id="reg_now" href="javascript:;" onclick="return false;">立即注册</a></div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        <form action="" method="post" id="login_form">
+          <div class="logininput">
+            <p><img src="icon\account.png" alt=""></p>
+            <input type="text" name="username" class="frame" placeholder="邮箱/用户名" />
+            <p><img src="icon\password.png" alt=""></p>
+            <input type="password" name="password" class="frame" placeholder="输入密码"/>
+            <div class="clear"></div>
+          </div>
+          <div class="loginbtn">
+            <div class="loginsubmit fl">
+              <input type="submit" value="登录" />
+            </div>
+            <div class="logcheckbox fl">
+              <input id="bcdl" type="checkbox" checked="true" /> 记住我
+            </div>
+            <div class="fr"><a href="#">忘记密码?</a></div>
+            <div class="clear"></div>
+          </div>
+        </form>
+      </div>
+      <div class="thirdlogin">
+        <div class="pd20">
+          <h4>用第三方帐号快速登录</h4>
+          <ul>
+            <li id="qq"><a href="#" title="QQ"></a></li>
+            <li id="wechat"><a href="#" title="微信"></a></li>
+            <li id="sina"><a href="#" titl4 e="微博"></a></li>
+            <li id="baidu"><a href="#" title="百度"></a></li>
+            <div class="clear"></div>
+          </ul>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <div class="regwindow">
+      <div class="loginwrap">
+        <div class="loginh">
+          <!-- login head -->
+          <div class="fl">注册会员</div>
+          <div class="fr">已有账号?<a id="login_now" href="javascript:;" onclick="return false;">账号登录</a></div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        <form action="" method="post" id="reg_form">
+          <div class="logininput">
+            <p><img src="icon\Mobile-phone.png" alt=""></p>            
+            <input type="text" class="frame" name="email" value="" placeholder="输入邮箱">
+            <p><img src="icon\account.png" alt=""></p>
+            <input type="text" class="frame" name="username" value="" placeholder="输入用户名">
+            <p><img src="icon\password.png" alt=""></p>            
+            <input type="password" class="frame" name="password" placeholder="输入密码">
+            <p><img src="icon\repassword.png" alt=""></p>
+            <input type="password" class="frame" name="repassword" placeholder="确定密码">
+            <input type="submit" class="regbtn" value="立即注册" />
+            <div class="clear"></div>
+          </div>
+		  <div class="clear"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
